@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin - Produkter</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="login.html"><button>Login</button></a>
+        <a href="register.html"><button>Register</button></a>
+        <a href="products.html"><button>Produkter</button></a>
+        <a href="orders.html"><button>Mina Order</button></a>
+        <a href="admin.html"><button>Admin</button></a>
+        <button onclick="logout()" style="background:#c00;color:white;">Logga ut</button>
+    </nav>
+
+    <h2>Admin - Hantera Produkter</h2>
+
+    <div class="card">
+        <h3>Skapa produkt</h3>
+        <input id="newName" placeholder="Namn">
+        <input id="newPrice" type="number" placeholder="Pris">
+        <button onclick="createProduct()">Skapa</button>
+    </div>
+
+    <h3>Befintliga produkter</h3>
+    <div id="adminProductList"></div>
+
+    <script src="../js/api.js"></script>
+    <script src="../js/admin.js"></script>
+    <script src="../js/logout.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registrering</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="login.html"><button>Login</button></a>
+        <a href="register.html"><button>Register</button></a>
+        <a href="products.html"><button>Produkter</button></a>
+        <a href="orders.html"><button>Mina Order</button></a>
+        <a href="admin.html"><button>Admin</button></a>
+        <button onclick="logout()" style="background:#c00;color:white;">Logga ut</button>
+    </nav>
+
+    <h2>Registrering</h2>
+
+    <div class="card">
+        <input id="regEmail" placeholder="Email">
+        <input id="regPassword" type="password" placeholder="Lösenord">
+        <button onclick="register()">Registrera</button>
+    </div>
+
+    <script src="../../js/api.js"></script>
+    <script src="../../js/register.js"></script>
+    <script src="../js/logout.js"></script>
+
+</body>
+
+</html>
